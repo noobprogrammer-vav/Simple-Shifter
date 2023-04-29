@@ -65,15 +65,19 @@ while run:
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LEFT] and ini:
             move = 'l'
+            Score+=1
             ini = False
         if keys[pygame.K_RIGHT] and ini:
             move = 'r'
+            Score+=1
             ini = False
         if keys[pygame.K_UP] and ini:
             move = 'u'
+            Score+=1
             ini = False
         if keys[pygame.K_DOWN] and ini:
             move = 'd'
+            Score+=1
             ini = False
     if move == 'l':
         waterx -= water_speed
@@ -93,7 +97,6 @@ while run:
         waterx, watery = waterposx, waterposy
         ini = True
         color_position = random.choice(dest)
-        Score+=1
         if water_speed < 0.2:
             water_speed += 0.01
     if color_position == 'l':
