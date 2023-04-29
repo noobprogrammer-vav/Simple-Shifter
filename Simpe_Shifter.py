@@ -52,7 +52,7 @@ def game_over():
 #water drop:
 waterx,watery = 240,240
 water_radius = 10
-water_speed = 0.1
+water_speed = 0.05
 waterposx,waterposy = 240,240
 ini = True
 move = 'nil'
